@@ -46,3 +46,9 @@ footer {
         flex-direction: column;
     }
 }
+
+
+img {
+    width: 100%;
+    height: auto;
+}
