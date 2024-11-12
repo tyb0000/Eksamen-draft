@@ -1,11 +1,16 @@
+/* css/style.css */
+
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #005B96;
     color: white;
     padding: 15px;
     text-align: center;
@@ -14,18 +19,17 @@ header {
 nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    background-color: #444;
+    background-color: #4DA6FF;
 }
 
 nav a {
     color: white;
     padding: 15px;
     text-decoration: none;
-    text-align: center;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #FFD966;
 }
 
 main {
@@ -33,7 +37,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #005B96;
     color: white;
     text-align: center;
     padding: 10px;
@@ -47,7 +51,6 @@ footer {
         flex-direction: column;
     }
 }
-
 
 .image-accessibility{
     width: 100%;
