@@ -74,6 +74,10 @@ border: 1px solid;
 
 }
 
+.firstyear th {
+    color: #005B96;
+}
+
 .firstyear{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,7 +91,8 @@ border: 1px solid;
 
 }
 
-.firstyear, caption{
+.firstyear.caption{
     text-align: center;
+    text-size-adjust: auto;
 }
 
