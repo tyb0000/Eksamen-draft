@@ -62,3 +62,16 @@ footer {
     height: 200px;
 
 }
+
+.program-structure {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.program-structure div {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
