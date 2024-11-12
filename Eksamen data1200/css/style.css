@@ -64,12 +64,27 @@ footer {
 
 }
 
-table.firstsem, th, td {
+table.firstsem, table.secondsem {
     border: 1px, solid;
     text-align: left;
-    width: 20rem;
+}
 
-    
+.firstyear th, td {
+border: 1px solid;
+
+}
+
+.firstyear{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+
+}
+
+.firstyear, h2 {
+    align-items: center;
+
 }
 
 
