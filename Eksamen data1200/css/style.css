@@ -68,37 +68,6 @@ footer {
     height: auto;
 }
 
-
-.Mercedes-photo{
-    width: 300px;
-    height: 200px;
-}
-
-.Porsche-photo{
-    width: 300px;
-    height: 500px;
-}
-
-.BMW-photo{
-    width: 500px;
-    height: 300px;
-}
-
-.Jaguar-photo{
-    width: 500px;
-    height: 300px;
-}
-
-.Tesla-photo{
-    width: 400px;
-    height: 400px;
-}
-
-.Audi-photo{
-    width: 500px;
-    height: 300px;
-}
-
 table.firstsem, table.secondsem {
     border: 1px, solid;
     text-align: left;
@@ -187,3 +156,44 @@ table.sixthsem {
     text-align: left;
 }
 
+
+/* Activity page */
+
+
+.Mercedes-photo{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+.Porsche-photo{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+.BMW-photo{
+    width: 18.75rem;
+    height: 12.5;
+}
+
+.Jaguar-photo{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+.Tesla-photo{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+.Audi-photo{
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+.row1cars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+
+}
