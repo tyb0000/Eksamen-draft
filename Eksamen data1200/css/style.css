@@ -67,10 +67,35 @@ footer {
     height: auto;
 }
 
-.image-mountain{
+
+.Mercedes-photo{
     width: 300px;
     height: 200px;
+}
 
+.Porsche-photo{
+    width: 300px;
+    height: 500px;
+}
+
+.BMW-photo{
+    width: 500px;
+    height: 300px;
+}
+
+.Jaguar-photo{
+    width: 500px;
+    height: 300px;
+}
+
+.Tesla-photo{
+    width: 400px;
+    height: 400px;
+}
+
+.Audi-photo{
+    width: 500px;
+    height: 300px;
 }
 
 table.firstsem, table.secondsem {
