@@ -94,4 +94,23 @@ border: 1px solid;
     align-items: center;
 }
 
-
+.secondyear th, td {
+    border: 1px solid;
+    
+    }
+    
+    .secondyear th {
+        color: #005B96;
+    }
+    
+    .secondyear{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: start;
+    
+    }
+    
+    .secondyear, h2 {
+        align-items: center;
+    }
