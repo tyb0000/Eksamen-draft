@@ -4,7 +4,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
-    color: #333333;   
+    color: #333333; 
+    display: flex;
+    flex-direction: column;  
+    min-height: 100vh;  
     margin: 0;
     padding: 0;
 }
@@ -18,8 +21,6 @@ header {
     position: relative;
     width: 100%;
     text-align: center;
-   
-    
 }
 
 nav {
@@ -43,7 +44,7 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: auto;
 }
 
 footer {
@@ -53,7 +54,7 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
-    bottom: auto;
+    margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -127,20 +128,25 @@ border: 1px solid;
 .secondyear th, td {
     border: 1px solid;
     
-    }
+}
     
-    .secondyear th {
+.secondyear th {
         color: #005B96;
-    }
+}
     
-    .secondyear{
+.secondyear{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         align-items: start;
     
-    }
+}
     
-    .secondyear, h2 {
+.secondyear, h2 {
         align-items: center;
-    }
+}
+
+table.thirdsem {
+    border: 1px, solid;
+    text-align: left;
+}
