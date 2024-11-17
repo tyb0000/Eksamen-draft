@@ -150,3 +150,40 @@ table.thirdsem {
     border: 1px, solid;
     text-align: left;
 }
+
+table.fourthsem {
+    border: 1px, solid;
+    text-align: left;
+}
+
+.thirdyear th, td {
+    border: 1px solid;
+    
+}
+    
+.thirdyear th {
+        color: #005B96;
+}
+    
+.thirdyear{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: start;
+    
+}
+    
+.thirdyear, h2 {
+        align-items: center;
+}
+
+table.fifthsem {
+    border: 1px, solid;
+    text-align: left;
+}
+
+table.sixthsem {
+    border: 1px, solid;
+    text-align: left;
+}
+
