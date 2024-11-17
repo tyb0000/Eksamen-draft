@@ -4,15 +4,17 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
-    color: #333333;
+    color: #333333;   
     margin: 0;
     padding: 0;
 }
 
+
 header {
     background-color: #005B96;
     color: white;
-    padding: 15px;
+    position: relative;
+    width: 100%;
     text-align: center;
 }
 
@@ -20,6 +22,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     background-color: #4DA6FF;
+    width: 100%;
 }
 
 nav a {
@@ -35,13 +38,14 @@ nav a:hover {
 
 main {
     padding: 20px;
+
+
 }
 
 footer {
     background-color: #005B96;
     color: white;
     text-align: center;
-    padding: 1rem;
     position: relative;
     width: 100%;
     bottom: auto;
