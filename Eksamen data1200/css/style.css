@@ -23,14 +23,16 @@ header {
     text-align: center;
 }
 
+
 nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     background-color: #4DA6FF;
     width: 100%;
-    position: relative;
-    justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
+    
 
 nav a {
     color: white;
@@ -68,95 +70,32 @@ footer {
     height: auto;
 }
 
-table.firstsem, table.secondsem {
+table.firstsem, table.secondsem, table.thirdsem, table.fourthsem, table.fifthsem, table.sixthsem {
     border: 1px, solid;
     text-align: left;
 }
 
 .firstyear th, td {
 border: 1px solid;
-
+}
+.secondyear th, td {
+    border: 1px solid; 
+}
+.thirdyear th, td {
+    border: 1px solid;
 }
 
-.firstyear th {
+.firstyear th, .secondyear th, .thirdyear th {
     color: #005B96;
 }
 
-.firstyear{
+.firstyear, .secondyear, .thirdyear{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: start;
-
-}
-
-.firstyear, h2 {
-    align-items: center;
-}
-
-.secondyear th, td {
-    border: 1px solid;
-    
 }
     
-.secondyear th {
-        color: #005B96;
-}
-    
-.secondyear{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        align-items: start;
-    
-}
-    
-.secondyear, h2 {
-        align-items: center;
-}
-
-table.thirdsem {
-    border: 1px, solid;
-    text-align: left;
-}
-
-table.fourthsem {
-    border: 1px, solid;
-    text-align: left;
-}
-
-.thirdyear th, td {
-    border: 1px solid;
-    
-}
-    
-.thirdyear th {
-        color: #005B96;
-}
-    
-.thirdyear{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        align-items: start;
-    
-}
-    
-.thirdyear, h2 {
-        align-items: center;
-}
-
-table.fifthsem {
-    border: 1px, solid;
-    text-align: left;
-}
-
-table.sixthsem {
-    border: 1px, solid;
-    text-align: left;
-}
-
-
 /* Activity page */
 
 .cars img{
@@ -171,38 +110,6 @@ table.sixthsem {
 .Porsche-photo, .Tesla-photo{
     object-fit: cover;
 }
-/*
-.Mercedes-photo{
-    width: 18.75rem;
-    height: 12.5rem;
-}
-
-.Porsche-photo{
-    width: 18.75rem;
-    height: 12.5rem;
-    object-fit: cover;
-}
-
-.BMW-photo{
-    width: 18.75rem;
-    height: 12.5;
-}
-
-.Jaguar-photo{
-    width: 18.75rem;
-    height: 12.5rem;
-}
-
-.Tesla-photo{
-    width: 18.75rem;
-    height: 12.5rem;
-}
-
-.Audi-photo{
-    width: 18.75rem;
-    height: 12.5rem;
-}
-*/
 
 .row1cars, .row2cars{
     display: grid;
