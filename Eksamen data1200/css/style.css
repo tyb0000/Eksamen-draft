@@ -43,8 +43,38 @@ nav a:hover {
     background-color: #FFD966;
 }
 
+
+details {
+    background: #F5F5F5;
+    padding: 1em;
+    margin: 0.1em 0em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0.2em SOLID #ddd;
+    display: grid;
+    transform: .5s ease-in-out;  
+    
+}   
+
+details:hover {
+  transform: scale(0.99); 
+}
+ 
+
+summary {
+    font-weight: bold;
+    margin: auto auto;
+    padding: .5em;
+}
+
+
 main {
     padding: auto;
+    text-align: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 footer {
@@ -68,9 +98,10 @@ footer {
     height: auto;
 }
 
+
 table.firstsem, table.secondsem {
     border: 1px, solid;
-    text-align: left;
+    text-align: center;
 }
 
 .firstyear th, td {
@@ -87,7 +118,6 @@ border: 1px solid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: start;
-
 }
 
 .firstyear, h2 {
@@ -102,7 +132,8 @@ border: 1px solid;
 .secondyear th {
         color: #005B96;
 }
-    
+
+
 .secondyear{
         display: grid;
         grid-template-columns: 1fr 1fr;
