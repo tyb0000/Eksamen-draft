@@ -45,8 +45,38 @@ nav a:hover {
     background-color: #FFD966;
 }
 
+
+details {
+    background: #F5F5F5;
+    padding: 1em;
+    margin: 0.1em 0em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0.2em SOLID #ddd;
+    display: grid;
+    transform: .5s ease-in-out;  
+    
+}   
+
+details:hover {
+  transform: scale(0.99); 
+}
+ 
+
+summary {
+    font-weight: bold;
+    margin: auto auto;
+    padding: .5em;
+}
+
+
 main {
     padding: auto;
+    text-align: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 footer {
@@ -72,7 +102,7 @@ footer {
 
 table.firstsem, table.secondsem, table.thirdsem, table.fourthsem, table.fifthsem, table.sixthsem {
     border: 1px, solid;
-    text-align: left;
+    text-align: center;
 }
 
 .firstyear th, td {
