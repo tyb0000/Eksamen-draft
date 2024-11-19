@@ -147,3 +147,54 @@ border: 1px solid;
     gap: 1rem;
     margin-left: 1rem;
 }
+
+
+/* GitHub page */
+
+.changesrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem; 
+    margin-left: 1rem; 
+}
+
+.Changes img {
+    width: 18.75rem; 
+    height: 12.5rem; 
+    object-fit: cover; 
+    transition: transform 0.3s ease, z-index 0.3s ease; 
+    cursor: pointer; 
+}
+
+
+.Changes img:hover,
+.Changes img:focus {
+    transform: scale(2); 
+    z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
+    position: relative; 
+}
+
+
+.Commithistoryrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 1rem; 
+    margin-left: 1rem; 
+}
+
+
+.Commithistory img {
+    width: 18.75rem; 
+    height: 12.5rem; 
+    object-fit: cover; 
+    transition: transform 0.3s ease, z-index 0.3s ease; 
+    cursor: pointer; 
+}
+
+
+.Commithistory img:hover,
+.Commithistory img:focus {
+    transform: scale(2); 
+    z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
+    position: relative; 
+}
