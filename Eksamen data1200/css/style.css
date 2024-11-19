@@ -159,7 +159,19 @@ table.sixthsem {
 
 /* Activity page */
 
+.cars img{
+    width: 18.75rem;
+    height: 12.5rem;
+}
 
+.cars img:hover{
+    transform: scale(1.1); /* ha med eller ikke? + ha med article class eller ikke? */
+}
+
+.Porsche-photo, .Tesla-photo{
+    object-fit: cover;
+}
+/*
 .Mercedes-photo{
     width: 18.75rem;
     height: 12.5rem;
@@ -168,6 +180,7 @@ table.sixthsem {
 .Porsche-photo{
     width: 18.75rem;
     height: 12.5rem;
+    object-fit: cover;
 }
 
 .BMW-photo{
@@ -189,11 +202,11 @@ table.sixthsem {
     width: 18.75rem;
     height: 12.5rem;
 }
+*/
 
-.row1cars{
+.row1cars, .row2cars{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    align-items: start;
-
+    margin-left: 1rem;
 }
