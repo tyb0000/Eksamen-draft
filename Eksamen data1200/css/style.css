@@ -90,15 +90,20 @@ footer {
     margin-top: auto;
 }
 
+.information span{
+    color: #005B96;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
     }
 }
 
-.campus{
-    width: 20rem;
-    height: 10rem;
+.campus img{
+    max-width: 100%;
+    height: auto;
 }
 
 .image-accessibility{
