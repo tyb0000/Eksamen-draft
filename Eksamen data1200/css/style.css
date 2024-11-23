@@ -52,6 +52,8 @@ nav a:hover {
 
 }
 
+/* Index page*/
+
 
 details {
     background: #F5F5F5;
@@ -268,6 +270,9 @@ border: 1px solid;
 
 
 
+.row1cars img, .row2cars img, .row3cars img{
+    width: 40rem;
+    height: 30rem;
 .cars img{
     width: 80%;
     height: 35%;
@@ -277,7 +282,7 @@ border: 1px solid;
     transform: scale(1.1);
 }
 
-.Porsche-photo, .Tesla-photo{
+.Porsche-photo, .Tesla-photo, .Jaguar-photo, .Audi-photo{
     object-fit: cover; 
 }
 
@@ -293,15 +298,15 @@ border: 1px solid;
 .changesrow {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 1rem; 
-    margin-left: 5rem; 
+    gap: 1rem;  
+    align-items: center;
 }
 
 .Changes img {
-    width: 43rem; 
-    height: 34rem; 
+    width: 35rem; 
+    height: 27rem; 
     object-fit: cover; 
-    transition: transform 0.3s ease, z-index 0.3s ease; 
+    transition: transform 0.3s ease;
     cursor: pointer; 
 }
 
@@ -309,7 +314,7 @@ border: 1px solid;
 .Changes img:hover,
 .Changes img:focus {
     transform: scale(1.3); 
-    z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
+    /*z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
     position: relative; 
 }
 
