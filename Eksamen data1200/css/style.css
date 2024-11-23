@@ -1,14 +1,14 @@
-/* css/style.css */
+/* css/style.css /
 
-/* General Styling */
+/ General Styling */
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
     font-size: larger;
     background-color: #F5F5F5;
     color: #333333; 
     display: flex;
-    flex-direction: column;  
-    min-height: 100vh;  
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -142,17 +142,57 @@ border: 1px solid;
     
 /* Activity page */
 
+.andre_bil {
+    background-color: #333333;
+    color: #D3D3D3;
+}
+
+.forste_bil, .andre_bil {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    /*padding-top: 5%;*/
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.tittel {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    padding: 3%;
+    justify-self: center;
+    font-size: 150%;
+    }
+
+.Audi-photo, .Porsche-photo, .BMW-photo , .Volvo-photo, .Tesla-photo, .Mercedes-photo{ /* Lurer på om det er mer effektivt med å kun bruke .venstre */
+    width: 80%;
+    height: 1000px;
+    padding: 2rem 5rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.hoyre {
+    width: 70%;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 150%;
+}
+
+
+
+
 .cars img{
     width: 18.75rem;
     height: 12.5rem;
 }
 
 .cars img:hover{
-    transform: scale(1.1); /* ha med eller ikke? + ha med article class eller ikke? */
+    transform: scale(1.1);
 }
 
 .Porsche-photo, .Tesla-photo{
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 .row1cars, .row2cars{
