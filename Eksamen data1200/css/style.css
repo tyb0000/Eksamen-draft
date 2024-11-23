@@ -2,7 +2,8 @@
 
 / General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    font-size: larger;
     background-color: #F5F5F5;
     color: #333333; 
     display: flex;
@@ -14,7 +15,7 @@ body {
 
 
 header {
-    margin: 0;
+    margin: 0rem ;
     padding: 1rem 0;
     background-color: #005B96;
     color: white;
@@ -44,6 +45,7 @@ nav a {
 
 nav a:hover {
     background-color: #FFD966;
+
 }
 
 
@@ -61,7 +63,8 @@ details {
 }   
 
 details:hover {
-  transform: scale(0.99); 
+  transform:scale(0.99); 
+  
 }
  
 
@@ -198,7 +201,6 @@ border: 1px solid;
     gap: 1rem;
     margin-left: 1rem;
 }
-
 
 /* GitHub page */
 
