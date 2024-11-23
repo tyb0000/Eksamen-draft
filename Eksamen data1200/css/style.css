@@ -230,56 +230,9 @@ border: 1px solid;
 
 /* Activity page */
 
-.andre_bil {
-    background-color: #333333;
-    color: #D3D3D3;
-}
-
-.forste_bil, .andre_bil {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    /*padding-top: 5%;*/
-    margin-bottom: 5%;
-    align-items: center;
-}
-
-.tittel {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    padding: 3%;
-    justify-self: center;
-    font-size: 150%;
-    }
-
-.Audi-photo, .Porsche-photo, .BMW-photo , .Volvo-photo, .Tesla-photo, .Mercedes-photo{ /* Lurer på om det er mer effektivt med å kun bruke .venstre */
-    width: 80%;
-    height: 100%;
-    padding: 2rem 5rem;
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.hoyre {
-    width: 70%;
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 150%;
-}
-
-
-
-
 .row1cars img, .row2cars img, .row3cars img{
     width: 40rem;
     height: 30rem;
-.cars img{
-    width: 80%;
-    height: 35%;
-}
-
-.cars img:hover{
-    transform: scale(1.1);
 }
 
 .Porsche-photo, .Tesla-photo, .Jaguar-photo, .Audi-photo{
@@ -288,10 +241,47 @@ border: 1px solid;
 
 .row1cars, .row2cars, .row3cars{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-left: 1rem;
 }
+
+.row1cars img:hover, .row2cars img:hover, .row3cars img:hover{
+    opacity: 0.3;
+}
+
+figure {
+    position: relative; /* Gjør figure til en "posisjonert" beholder */
+    display: block; /* Sikrer at figure oppfører seg som et blokkelement */
+    width: 100%; /* Sett bredde etter behov */
+    margin: 0; /* Fjern standard margin */
+}
+
+figure img {
+    width: 100%; /* Bildet fyller hele figure-elementet */
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    position: absolute; /* Plasseres relativt til figure */
+    top: 50%; /* Sentrum vertikalt */
+    left: 50%; /* Sentrum horisontalt */
+    transform: translate(-50%, -50%); /* Justerer for sentrering */
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent bakgrunn */
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Glidende overgang */
+    text-align: center;
+}
+
+figure:hover figcaption {
+    opacity: 1; /* Gjør teksten synlig når du hover */
+}
+
 
 /* GitHub page */
 
