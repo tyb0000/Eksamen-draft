@@ -15,12 +15,12 @@ body {
 
 
 header {
+    width: 100%;
     margin: 0rem ;
     padding: 1rem 0;
     background-color: #005B96;
     color: white;
     position: relative;
-    width: 100%;
     text-align: center;
 }
 
@@ -33,6 +33,10 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1;
+    border: 2px solid black;
+    text-shadow: rgb(0, 0, 0) 1px 0 5px;    
+
+
 }
     
 
@@ -91,6 +95,7 @@ footer {
     position: relative;
     width: 100%;
     margin-top: auto;
+    border-top: 2px solid #000000;
 }
 
 .information span{
@@ -139,7 +144,88 @@ border: 1px solid;
     gap: 1rem;
     align-items: start;
 }
+
+.studentstories {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.studentstories-box {
+    border: 3px solid black;
+    background-color: #005B96;
+    color: white;
+    width: 60%;
+    text-align: start;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex; /* Får justert dem horizontalt */
+    justify-content: space-between; 
+    overflow: hidden;
+    align-items: center; 
+    gap: 1rem; 
+}
+
+
+.studentstories-box article {
+    flex: 1; /* Gjør at tekstseksjonen tar opp lik plass */
+    padding: 1rem;
+}
+
+.left-section {
+    flex: 1; /* Lar venstre siden vokse og krympe dynamisk */
+    text-align: start;
     
+}
+
+.right-section {
+    flex: 1; /* Lar høyre siden vokse og krympe dynamisk  */
+    display: flex; /* sørger at alt inni boksen er justert */
+    justify-content: flex-end; /* dytter bilde til høyre */
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}   
+
+.flere-studentstories {
+    background-color:#4DA6FF;
+    width: 80%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    color: white;
+    border: solid 3px #005B96;
+    text-decoration: none;
+    position: relative;   
+}
+
+.flere-studentstories-link {
+    text-decoration: none; /* Fjerner linjen under */
+    display: block; 
+    width: 90%; 
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto; 
+    overflow: hidden;
+    color: white;
+}
+
+.flere-studentstories:hover {
+    background-color: #FFD966; 
+    transform: scale(1.02);
+    transition: transform 0.3s ease, z-index 0.1s ease-in; 
+    cursor: pointer;   
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /*Skygge for uthevelse*/
+
+}
+
 /* Activity page */
 
 .andre_bil {
@@ -166,7 +252,7 @@ border: 1px solid;
 
 .Audi-photo, .Porsche-photo, .BMW-photo , .Volvo-photo, .Tesla-photo, .Mercedes-photo{ /* Lurer på om det er mer effektivt med å kun bruke .venstre */
     width: 80%;
-    height: 1000px;
+    height: 100%;
     padding: 2rem 5rem;
     grid-column: 1;
     grid-row: 2;
@@ -183,8 +269,8 @@ border: 1px solid;
 
 
 .cars img{
-    width: 18.75rem;
-    height: 12.5rem;
+    width: 80%;
+    height: 35%;
 }
 
 .cars img:hover{
@@ -251,3 +337,4 @@ border: 1px solid;
     z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
     position: relative; 
 }
+
