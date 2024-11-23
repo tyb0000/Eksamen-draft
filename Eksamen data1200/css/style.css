@@ -142,46 +142,6 @@ border: 1px solid;
     
 /* Activity page */
 
-.andre_bil {
-    background-color: #333333;
-    color: #D3D3D3;
-}
-
-.forste_bil, .andre_bil {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    /*padding-top: 5%;*/
-    margin-bottom: 5%;
-    align-items: center;
-}
-
-.tittel {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    padding: 3%;
-    justify-self: center;
-    font-size: 150%;
-    }
-
-.Audi-photo, .Porsche-photo, .BMW-photo , .Volvo-photo, .Tesla-photo, .Mercedes-photo{ /* Lurer på om det er mer effektivt med å kun bruke .venstre */
-    width: 80%;
-    height: 1000px;
-    padding: 2rem 5rem;
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.hoyre {
-    width: 70%;
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 150%;
-}
-
-
-
-
 .cars img{
     width: 18.75rem;
     height: 12.5rem;
@@ -195,9 +155,9 @@ border: 1px solid;
     object-fit: cover; 
 }
 
-.row1cars, .row2cars{
+.row1cars, .row2cars, .row3cars{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 1rem;
     margin-left: 1rem;
 }
