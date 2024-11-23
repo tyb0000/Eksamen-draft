@@ -210,8 +210,8 @@ border: 1px solid;
 }
 
 .Changes img {
-    width: 18.75rem; 
-    height: 12.5rem; 
+    width: 43rem; 
+    height: 34rem; 
     object-fit: cover; 
     transition: transform 0.3s ease, z-index 0.3s ease; 
     cursor: pointer; 
@@ -220,7 +220,7 @@ border: 1px solid;
 
 .Changes img:hover,
 .Changes img:focus {
-    transform: scale(2.2); 
+    transform: scale(1.3); 
     z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
     position: relative; 
 }
@@ -243,9 +243,9 @@ border: 1px solid;
 }
 
 
-.Commithistory img:hover,
+/*.Commithistory img:hover,
 .Commithistory img:focus {
-    transform: scale(1.3); 
-    z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
-    position: relative; 
-}
+    transform: scale(1.2); 
+    z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php 
+    position: relative; '/'
+} */
