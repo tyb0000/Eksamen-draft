@@ -251,6 +251,7 @@ border: 1px solid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-left: 1rem;
+    margin-right: 0.7rem;
 }
 
 .row1cars img:hover, .row2cars img:hover, .row3cars img:hover{
