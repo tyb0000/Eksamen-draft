@@ -297,7 +297,7 @@ figure:hover figcaption {
 /* Gjør teksten responsiv */
 @media (max-width: 600px) {
     figcaption {
-        font-size: 1rem; /* Reduser tekststørrelse på små skjermer */
+        font-size: 0.8rem; /* Reduser tekststørrelse på små skjermer */
         padding: 0.5em;
     }
 }
@@ -370,8 +370,6 @@ figure:hover figcaption {
     width: 100%;
     max-width: 30rem; 
     height: auto; 
-    transition: transform 0.3s ease, z-index 0.3s ease;
-    cursor: pointer;
 }
 
 .changesrow,
