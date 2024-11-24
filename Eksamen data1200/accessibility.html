@@ -22,104 +22,60 @@
 </nav>
 
 <main>
-    <section class="accessibility-page">
-        <header>
-            <h1>Accessibility Presentation and Testing of My Website</h1>
-        </header>
+    <section class="accessibility">
+        <h2>Accessibility Presentation and Testing</h2>
     
-        <p>
-            Accessibility is a critical aspect of modern web development, ensuring that websites are usable for everyone, 
-            including people with disabilities. While automated tools can help identify and address accessibility issues, 
-            they are not exhaustive. This report presents the accessibility choices made in the development of my site, 
-            including insights from automated testing and additional manual inspections to ensure compliance with 
-            universal design principles.
-        </p>
-    
-        <article>
-            <header>
-                <h2>Automated Accessibility Testing</h2>
-            </header>
+        <section>
+            <h3>Automated Accessibility Testing</h3>
             <p>
                 I tested the site using Lighthouse, an automated tool that evaluates various aspects of accessibility, 
                 such as contrast, semantic structure, and proper use of attributes. 
                 The tools flagged the following strengths and areas for improvement:
             </p>
     
-            <section>
-                <header>
-                    <h3>Strengths</h3>
-                </header>
-                <ul>
-                    <li>
-                        <strong>Alt Attributes:</strong> All images included descriptive alt text, ensuring they are accessible 
-                        to screen readers. For example, the Audi image uses the alt text: "Audi," which briefly describes the car 
-                        for visually impaired users.
-                    </li>
-                    <li>
-                        <strong>Color Contrast:</strong> The site’s color scheme was tested to be colorblind-friendly, 
-                        with high contrast ratios between text and background.
-                    </li>
-                    <li>
-                        <strong>Semantic Structure:</strong> Proper HTML5 elements, such as <code>&lt;article&gt;</code>, 
-                        <code>&lt;figure&gt;</code>, and <code>&lt;figcaption&gt;</code>, were used for content organization, 
-                        aiding assistive technologies in navigating the site.
-                    </li>
-                </ul>
-            </section>
+            <h4>Strengths</h4>
+            <ul>
+                <li><strong>Alt Attributes:</strong> All images included descriptive alt text, ensuring they are accessible 
+                    to screen readers. For example, the Audi image uses the alt text: "Audi," which briefly describes the car 
+                    for visually impaired users.</li>
+                <li><strong>Color Contrast:</strong> The site's color scheme was tested to be colorblind-friendly, 
+                    with high contrast ratios between text and background.</li>
+                <li><strong>Semantic Structure:</strong> Proper HTML5 elements, such as <code>&lt;article&gt;</code>, 
+                    <code>&lt;figure&gt;</code>, and <code>&lt;figcaption&gt;</code>, were used for content organization, 
+                    aiding assistive technologies in navigating the site.</li>
+            </ul>
     
-            <section>
-                <header>
-                    <h3>Areas for Improvement</h3>
-                </header>
-                <ul>
-                    <li>
-                        <strong>Oversized Images:</strong> Oversized images were identified in the initial design, 
-                        leading to inefficiencies in loading. This issue was resolved by implementing responsive images.
-                    </li>
-                </ul>
-                <p>Screenshots from the automated tests show a strong performance in accessibility categories. 
-                   These tests provided a solid foundation for ensuring universal design compliance.</p>
-            </section>
-        </article>
+            <h4>Areas for Improvement</h4>
+            <ul>
+                <li><strong>Oversized Images:</strong> Oversized images were identified in the initial design, 
+                    leading to inefficiencies in loading. This issue was resolved by implementing responsive images.</li>
+            </ul>
+        </section>
     
-        <article>
-            <header>
-                <h2>Manual Accessibility Checks</h2>
-            </header>
+        <section>
+            <h3>Manual Accessibility Checks</h3>
             <p>Automated tools cannot catch everything. We conducted manual checks for the following:</p>
+            <ul>
+                <li><strong>Logical Tab Order:</strong> Navigation via the keyboard was tested to ensure all interactive elements, 
+                    such as links and buttons, followed a logical tab order.</li>
+                <li><strong>Responsive Design:</strong> Media queries and flexible layouts were used to ensure the site adapts 
+                    seamlessly across devices.</li>
+                <li><strong>Image Optimization:</strong> Smaller images were used to reduce bandwidth usage and improve loading speeds.</li>
+                <li><strong>Hover and Focus States:</strong> Interactive elements, like images, were manually checked to ensure 
+                    they provide visual feedback when focused or hovered, enhancing usability for keyboard users.</li>
+            </ul>
+        </section>
     
-            <ol>
-                <li>
-                    <strong>Logical Tab Order:</strong> Navigation via the keyboard was tested to ensure all interactive elements, 
-                    such as links and buttons, followed a logical tab order. For instance, the <code>&lt;a&gt;</code> tags linking 
-                    to the Audi official site and other external resources were tested for focus and hover states.
-                </li>
-                <li>
-                    <strong>Responsive Design:</strong> Media queries and flexible layouts were used to ensure the site adapts 
-                    seamlessly across devices. For instance, the <code>.collaboration</code> container dynamically scales with 
-                    <code>max-width</code> and <code>padding</code> defined in percentages to prevent horizontal scrolling 
-                    or content overflow.
-                </li>
-                <li>
-                    <strong>Image Optimization:</strong> To reduce bandwidth usage and improve loading speeds, we used 
-                    smaller images, avoiding the inefficiency of large images being displayed smaller.
-                </li>
-                <li>
-                    <strong>Hover and Focus States:</strong> Interactive elements, like images, were manually checked to ensure 
-                    they provide visual feedback when focused or hovered, enhancing usability for keyboard users.
-                </li>
-            </ol>
-        </article>
-    
-        <footer>
-            <h2>Conclusion</h2>
+        <section>
+            <h3>Conclusion</h3>
             <p>
                 While automated tests are a helpful starting point, manual testing revealed nuances that require careful coding 
                 decisions to create a fully accessible site. Semantic HTML, responsive design, optimized images, and careful 
                 attention to interactivity ensure the site is inclusive for all users.
             </p>
-        </footer>
+        </section>
     </section>
+    
     
     
 
