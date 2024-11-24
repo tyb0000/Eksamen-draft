@@ -146,60 +146,74 @@ border: 1px solid;
     align-items: start;
 }
 
+@media only screen and (max-width: 500px) {
+    .firstyear, .secondyear, .thirdyear {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 1050px) {
+    .firstyear, .secondyear, .thirdyear {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+
 .otherstudies ul, li{
     list-style-position: inside;
     margin: 1rem auto;
 }
 
-.studentstories {
-    width: 50%;
-    text-align: center;
-    position: relative;
-    
+.generellinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+aside .generellinfo{
+    float: inline-start;
+}
+
+
 
 .studentstories-box {
     border: 3px solid black;
     background-color: #005B96;
     color: white;
     width: 60%;
-    text-align: start;
     margin: auto;
     box-sizing: border-box;
-    display: flex; /* Får justert dem horizontalt */
-    justify-content: space-between; 
-    overflow: hidden;
+    display: grid; /* Får justert dem horizontalt */
+    grid-template-columns: 1fr;
     align-items: center; 
     gap: 1rem; 
+    height: auto;
 }
 
-
-.studentstories-box article {
-    flex: 1; /* Gjør at tekstseksjonen tar opp lik plass */
-    padding: 1rem;
+.left-section{
+    text-align: center;
 }
 
-.left-section {
-    flex: 1; /* Lar venstre siden vokse og krympe dynamisk */
-    text-align: start;
-    
+.right-section{
+    position: relative;
+    overflow: hidden;
 }
 
-.right-section {
-    flex: 1; /* Lar høyre siden vokse og krympe dynamisk  */
-    display: flex; /* sørger at alt inni boksen er justert */
-    justify-content: flex-end; /* dytter bilde til høyre */
+.right-section img {
+    display: block;
     background-color: #F5F5F5;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.box-image {
-    max-width: 100%; /* Ensure the image is responsive */
     height: auto;
-    border-radius: 8px; /* Optional: Add rounded corners */
-}   
+    border-top: 2px solid black ;
+}
+ 
 
 .flere-studentstories {
     background-color:#4DA6FF;
@@ -207,6 +221,8 @@ border: 1px solid;
     min-width: 300px;
     max-width: 600px;
     margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: white;
     border: solid 3px #005B96;
     text-decoration: none;
