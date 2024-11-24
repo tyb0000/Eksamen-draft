@@ -2,12 +2,21 @@
 
 / General Styling */
 body {
+<<<<<<< Updated upstream
     font-family:'Franklin Gothic Medium', Arial, sans-serif, sans-serif; /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; */
+=======
+    font-family:'Franklin Gothic Medium', Arial, sans-serif, sans-serif;
+>>>>>>> Stashed changes
     font-size: larger;
     background-color: #F5F5F5; /* Muligens en ubrukelig kode, altså bytter fargen */
     color: #333333; 
+<<<<<<< Updated upstream
     display: flex; /* VI BURDE SLETTE DET HER */
     flex-direction: column;
+=======
+    /*display: flex;
+    flex-direction: column;*/
+>>>>>>> Stashed changes
     min-height: 100vh;
     margin: 0; /* Unødvendig kode, slik som jeg så - Zabi */
     padding: 0;/* Unødvendig kode, slik som jeg så - Zabi */
@@ -171,7 +180,7 @@ border: 1px solid;
     align-items: start;
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) { 
     .firstyear, .secondyear, .thirdyear {
         display: inline-block;
         font-size: 1rem;
@@ -181,7 +190,7 @@ border: 1px solid;
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) { /*fikse  at den blir slik*/
     .firstyear, .secondyear, .thirdyear {
         display: inline-block;
         font-size: 1rem;
@@ -585,8 +594,6 @@ figure:hover figcaption {
     line-height: 1.6;
 }
 
-
-
 .activity img {
     width: 100%;
     max-width: 40rem; 
@@ -601,11 +608,45 @@ figure:hover figcaption {
 
 .index img {
     width: 100%;
-    max-width: 400rem; 
+    max-width: 40rem; 
     height: auto; 
 }
 
-.lighhouse-old {
+.lighthouse-old {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto; 
+    padding: 1rem; 
+    max-width: 100%; 
+}
+
+.activity-new img {
+    width: 100%;
+    max-width: 40rem; 
+    height: auto; 
+}
+
+.github-new img {
+    width: 100%;
+    max-width: 40rem; 
+    height: auto; 
+}
+
+/*.index img {
+    width: 100%;
+    max-width: 400rem; 
+    height: auto; 
+}*/
+
+.accessibility-new {
+    width: 100%;
+    max-width: 40rem; 
+    height: auto; 
+
+}
+
+.lighthouse-new {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
