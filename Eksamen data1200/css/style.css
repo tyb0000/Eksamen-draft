@@ -259,40 +259,48 @@ border: 1px solid;
 
 figure {
     position: relative; /* Gjør figure til en "posisjonert" beholder */
-    display: block; /* Sikrer at figure oppfører seg som et blokkelement */
-    width: 100%; /* Sett bredde etter behov */
-    margin: 0; /* Fjern standard margin */
+    display: inline-block; /* Passer godt til bildene */
+    width: 100%; /* Bilde fyller foreldreelementets bredde */
+    margin: 0 auto; /* Sentrer på siden */
+    overflow: hidden; /* Hindrer at innhold flyter ut */
 }
 
 figure img {
-    width: 100%; /* Bildet fyller hele figure-elementet */
-    height: auto;
+    width: 100%; /* Bildet skaleres med containeren */
+    height: auto; /* Bevarer proporsjoner */
     display: block;
-    transition: opacity 0.3s ease;
-}
-
-figure:hover img {
-    opacity: 0.5;
 }
 
 figcaption {
-    position: absolute; /* Plasseres relativt til figure */
-    top: 50%; /* Sentrum vertikalt */
-    left: 50%; /* Sentrum horisontalt */
-    transform: translate(-50%, -50%); /* Justerer for sentrering */
+    position: absolute; /* Plasseres i forhold til figure */
+    top: 0;
+    left: 0;
+    width: 100; /* Fyller hele bredden av bildet */
+    height: 100%; /* Fyller hele høyden av bildet */
+    display: grid; /* For enkel sentrering av tekst */
+    justify-content: center; /* Sentrerer horisontalt */
+    align-items: center; /* Sentrerer vertikalt */
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Juster tekststørrelsen */
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent bakgrunn */
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Glidende overgang */
+    padding: 1em;
     text-align: center;
+    opacity: 0; /* Skjult som standard */
+    transition: opacity 0.3s ease-in-out; /* Glidende overgang */
 }
 
 figure:hover figcaption {
-    opacity: 1; /* Gjør teksten synlig når du hover */
+    opacity: 1; /* Synlig ved hover */
 }
+
+/* Gjør teksten responsiv */
+@media (max-width: 600px) {
+    figcaption {
+        font-size: 1rem; /* Reduser tekststørrelse på små skjermer */
+        padding: 0.5em;
+    }
+}
+
 
 
 /* GitHub page */
