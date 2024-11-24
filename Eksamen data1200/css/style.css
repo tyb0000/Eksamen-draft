@@ -150,6 +150,27 @@ border: 1px solid;
     align-items: start;
 }
 
+@media only screen and (max-width: 500px) {
+    .firstyear, .secondyear, .thirdyear {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 1050px) {
+    .firstyear, .secondyear, .thirdyear {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+
 .otherstudies ul, li{
     list-style-position: inside;
     margin: 1rem auto;
