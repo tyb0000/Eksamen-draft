@@ -43,7 +43,6 @@ nav {
 
 }
     
-
 nav a {
     color: white;
     padding: 15px;
@@ -183,7 +182,67 @@ aside .generellinfo{
     float: inline-start;
 }
 
+.leftinfo, .rightinfo {
+    width: 100%; 
+    max-width: 90%; 
+    margin: 2rem auto;
+    padding: 3%; 
+    background-color: #fff;
+    border-radius: 4rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
 
+.leftinfo, .rightinfo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+    text-align: center;
+}
+
+.leftinfo, .rightinfo{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.leftinfo, .rightinfo {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.leftinfo, .rightinfo {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    list-style-position: inside;    
+}
+
+.leftinfo, .rightinfo {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 500px) {
+    .leftinfo, .rightinfo {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 1050px) {
+    .leftinfo, .rightinfo {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
 
 .studentstories-box {
     border: 3px solid black;
@@ -292,6 +351,8 @@ aside .generellinfo{
     margin-bottom: 1rem;
     line-height: 1.6;
 }
+
+
 
 /* Activity page */
 
@@ -503,7 +564,6 @@ figure:hover figcaption {
     border-radius: 4px;
     font-family: monospace;
 }
-
 
 
 .activity img {
