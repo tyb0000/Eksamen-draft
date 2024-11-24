@@ -104,6 +104,30 @@ footer {
     border-top: 2px solid #000000;
 }
 
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.footer a{
+    color: white;
+}
+
+.socialmedia img{
+    width: 3rem;
+    height: 3rem;
+    forced-color-adjust: black;
+    object-fit: cover;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
 .information span{
     color: #005B96;
     font-weight: bold;
@@ -222,6 +246,10 @@ aside .generellinfo{
 .leftinfo, .rightinfo {
     margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+.rightinfo ul{
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -350,6 +378,7 @@ aside .generellinfo{
 .information ul li {
     margin-bottom: 1rem;
     line-height: 1.6;
+    list-style-type: none;
 }
 
 
