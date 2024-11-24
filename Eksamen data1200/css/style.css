@@ -2,21 +2,12 @@
 
 / General Styling */
 body {
-<<<<<<< Updated upstream
-    font-family:'Franklin Gothic Medium', Arial, sans-serif, sans-serif; /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; */
-=======
-    font-family:'Franklin Gothic Medium', Arial, sans-serif, sans-serif;
->>>>>>> Stashed changes
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
     font-size: larger;
     background-color: #F5F5F5; /* Muligens en ubrukelig kode, altså bytter fargen */
     color: #333333; 
-<<<<<<< Updated upstream
-    display: flex; /* VI BURDE SLETTE DET HER */
+    display: flex;
     flex-direction: column;
-=======
-    /*display: flex;
-    flex-direction: column;*/
->>>>>>> Stashed changes
     min-height: 100vh;
     margin: 0; /* Unødvendig kode, slik som jeg så - Zabi */
     padding: 0;/* Unødvendig kode, slik som jeg så - Zabi */
