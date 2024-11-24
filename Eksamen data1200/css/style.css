@@ -119,10 +119,6 @@ footer {
     height: auto;
 }
 
-.image-accessibility{
-    width: 100%;
-    height: auto;
-}
 
 table.firstsem, table.secondsem, table.thirdsem, table.fourthsem, table.fifthsem, table.sixthsem {
     border: 1px, solid;
@@ -430,3 +426,91 @@ figure:hover figcaption {
     max-width: 100%; 
 }
 
+
+/* Accessibility page */
+
+/* Scope styles specifically to the accessibility page */
+.accessibility-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-page h1,
+.accessibility-page h2,
+.accessibility-page h3 {
+    color: #fdfdfd;
+}
+
+.accessibility-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.accessibility-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.accessibility-page h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.accessibility-page p {
+    margin-bottom: 1rem;
+}
+
+.accessibility-page ul,
+.accessibility-page ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.accessibility-page ul li,
+.accessibility-page ol li {
+    margin-bottom: 0.5rem;
+}
+
+.accessibility-page code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+
+
+.activity img {
+    width: 100%;
+    max-width: 40rem; 
+    height: auto; 
+}
+
+.github img {
+    width: 100%;
+    max-width: 40rem; 
+    height: auto; 
+}
+
+.index img {
+    width: 100%;
+    max-width: 400rem; 
+    height: auto; 
+}
+
+.lighhouse-old {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto; 
+    padding: 1rem; 
+    max-width: 100%; 
+}
