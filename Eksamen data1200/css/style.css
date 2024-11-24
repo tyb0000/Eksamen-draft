@@ -22,6 +22,9 @@ header {
     color: white;
     position: relative;
     text-align: center;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 
@@ -230,12 +233,16 @@ border: 1px solid;
 
 /* Activity page */
 
-.row1cars img, .row2cars img, .row3cars img{
-    width: 40rem;
-    height: 30rem;
+
+.cars img{
+    width: 100%;
+    max-width: 40em;
+    height: auto;
 }
 
-.Porsche-photo, .Tesla-photo, .Jaguar-photo, .Audi-photo{
+
+
+.cars img{
     object-fit: cover; 
 }
 
