@@ -297,63 +297,11 @@ figure:hover figcaption {
 
 /* GitHub page */
 
-.changesrow {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 1rem;  
-    align-items: center;
-}
-
-.Changes img {
-    width: 35rem; 
-    height: 27rem; 
-    object-fit: cover; 
-    transition: transform 0.3s ease;
-    cursor: pointer; 
-}
-
-.Changes img:hover,
-.Changes img:focus {
-    transform: scale(1.3); 
-    /*z-index: 10; /* source for use of z-indeks https://www.w3schools.com/cssref/pr_pos_z-index.php */
-    position: relative; 
-}
-
-.Changes {
-    overflow: hidden; 
-}
-
-.Commithistory img {
-    width: 100%;
-    max-width: 30rem; 
-    height: auto; 
-    transition: transform 0.3s ease, z-index 0.3s ease;
-    cursor: pointer;
-}
-
-.changesrow,
-.Commithistoryrow {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 1rem; 
-    margin-left: 5rem; 
-}
-
-
-.Commithistory img {
-    width: 18.75rem; 
-    height: 55rem; 
-    object-fit: cover; 
-    transition: transform 0.3s ease, z-index 0.3s ease; 
-    cursor: pointer; 
-}
-
-
 .collaboration {
-    width: 100%;
-    max-width: 90%;
+    width: 100%; 
+    max-width: 90%; 
     margin: 2rem auto;
-    padding: 3%;
+    padding: 3%; 
     background-color: #fff;
     border-radius: 4rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
@@ -388,3 +336,42 @@ figure:hover figcaption {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
+
+
+
+.Changes img {
+    width: 100%;
+    max-width: 40em; 
+    height: auto; 
+    transition: transform 0.3s ease, z-index 0.3s ease; 
+    cursor: pointer; 
+}
+
+.Changes img:hover,
+.Changes img:focus {
+    transform: scale(1.2); 
+    position: relative; 
+}
+
+.Changes {
+    overflow: hidden; 
+}
+
+.Commithistory img {
+    width: 100%;
+    max-width: 30rem; 
+    height: auto; 
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+}
+
+.changesrow,
+.Commithistoryrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto; 
+    padding: 1rem; 
+    max-width: 100%; 
+}
+
