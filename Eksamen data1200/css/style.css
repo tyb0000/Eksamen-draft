@@ -320,6 +320,8 @@ table.firstsem, table.secondsem, table.thirdsem, table.fourthsem, table.fifthsem
     width: 100%;
     max-width: 40em;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 .cars img{
@@ -338,7 +340,7 @@ table.firstsem, table.secondsem, table.thirdsem, table.fourthsem, table.fifthsem
     opacity: 0.3; /*changes the img opacity when hovering over them*/
 }
 
-figure {
+figure { /* for the figure semantic element on this page we reffer to this source https://www.w3schools.com/tags/tag_figure.asp */
     position: relative; 
     display: inline-block; 
     width: 100%; 
@@ -352,31 +354,43 @@ figure img {
     display: block;
 }
 
-figcaption {
-    position: absolute; /* Plasseres i forhold til figure */
+figcaption { 
+    position: absolute; 
     top: 0;
     left: 0;
-    width: 100; /* Fyller hele bredden av bildet */
-    height: 100%; /* Fyller hele høyden av bildet */
-    display: grid; /* For enkel sentrering av tekst */
-    align-items: center; /* Sentrerer vertikalt */
+    width: 100; 
+    height: 100%; 
+    display: grid; 
+    align-items: center; 
     color: white;
-    font-size: 1.2rem; /* Juster tekststørrelsen */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent bakgrunn */
+    font-size: 1.2rem; 
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 1em;
     text-align: center;
-    opacity: 0; /* Skjult som standard */
-    transition: opacity 0.3s ease-in-out; /* Glidende overgang */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
 }
 
 figure:hover figcaption {
-    opacity: 1; /* Synlig ved hover */
+    opacity: 1; /* makes the figure visible while hovering over */
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) { /*makes the text in figures scale with viewport*/
     figcaption {
         font-size: 0.6rem;
         padding: 0.5em;
+    }
+}
+
+@media (min-aspect-ratio: 21/9) {
+    .cars img {
+        max-width: 60em;
+    }
+}
+
+@media (max-width: 768px) {
+    .cars img {
+        max-width: 30em;
     }
 }
 
@@ -422,17 +436,15 @@ figure:hover figcaption {
     line-height: 1.6;
 }
 
-
-
 .Changes img {
     width: 100%;
     max-width: 40em; 
     height: auto; 
-    transition: transform 0.3s ease, z-index 0.3s ease; 
-    cursor: pointer; 
+    transition: transform 0.3s ease, z-index 0.3s ease; /* for the z-index property we reffer to https://www.w3schools.com/cssref/pr_pos_z-index.php*/ 
+    cursor: pointer;
 }
 
-.Changes img:hover,
+.Changes img:hover, /*zooms in to img so that it is more readable*/
 .Changes img:focus {
     transform: scale(1.2); 
     position: relative; 
@@ -515,7 +527,7 @@ figure:hover figcaption {
     height: auto; 
 }
 
-.lighthouse-old {
+.lighthouse-old { /*these classes are for the first lighthouse tests*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
@@ -531,7 +543,7 @@ figure:hover figcaption {
 }
 
 
-.lighthouse-new1 {
+.lighthouse-new1 { /*these classes are for the new and improved lighthouse tests*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -547,7 +559,7 @@ figure:hover figcaption {
     height: auto; 
 }
 
-.lighthouse-new2 {
+.lighthouse-new2 { /*these classes are for the new and improved lighthouse tests*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
