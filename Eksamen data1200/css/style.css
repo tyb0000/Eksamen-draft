@@ -616,21 +616,9 @@ figure:hover figcaption {
     line-height: 1.6;
 }
 
-.activity img {
+.lighthouse-old img {
     width: 100%;
-    max-width: 40rem; 
-    height: auto; 
-}
-
-.github img {
-    width: 100%;
-    max-width: 40rem; 
-    height: auto; 
-}
-
-.index img {
-    width: 100%;
-    max-width: 40rem; 
+    max-width: 35rem; 
     height: auto; 
 }
 
@@ -640,39 +628,38 @@ figure:hover figcaption {
     gap: 1rem;
     margin: 0 auto; 
     padding: 1rem; 
-    max-width: 100%; 
+    max-width: 100%;
 }
 
-.activity-new img {
+.lighthouse-new1 img {
     width: 100%;
-    max-width: 40rem; 
+    max-width: 35rem; 
     height: auto; 
 }
 
-.github-new img {
-    width: 100%;
-    max-width: 40rem; 
-    height: auto; 
-}
 
-/*.index img {
-    width: 100%;
-    max-width: 400rem; 
-    height: auto; 
-}*/
-
-.accessibility-new {
-    width: 100%;
-    max-width: 40rem; 
-    height: auto; 
-
-}
-
-.lighthouse-new {
+.lighthouse-new1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin: 0 auto; 
     padding: 1rem; 
-    max-width: 100%; 
+    max-width: 100%;
+    align-items: center;
+}
+
+.lighthouse-new2 img {
+    width: 100%;
+    max-width: 35rem; 
+    height: auto; 
+}
+
+.lighthouse-new2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto; 
+    padding: 1rem;
+    max-width: 100%;
+    align-items: center;
 }
