@@ -117,9 +117,11 @@ footer {
     color: white;
 }
 
-.socialmedia li {
-    padding-bottom: 10%;
+.footer a:hover{
+    color: #000000;
 }
+
+
 
 @media (max-width: 500px) { 
     .footer {
@@ -128,10 +130,6 @@ footer {
         padding: 0.5em;
         overflow-wrap: break-word;
         word-wrap: break-word;
-    }
-
-    .socialmedia li {
-        padding-bottom: 40%;
     }
 }
 
@@ -362,14 +360,19 @@ aside .generellinfo{
 }
 
 .flere-studentstories:hover {
+    color: black;
     background-color: #FFD966;  
     transform: scale(1.02);
     transition: transform 0.3s ease, z-index 0.1s ease-in; 
     cursor: pointer;   
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /*Skygge for uthevelse*/
     text-decoration: underline;
-
 }
+
+.flere-studentstories :hover{
+    color:black;
+}
+
 
 .information {
     width: 100%; 
